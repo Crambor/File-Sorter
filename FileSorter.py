@@ -34,8 +34,8 @@ class FileHandler(FileSystemEventHandler):
 
     @staticmethod
     def get_folder(extension):
-        for folder in folders:
-            if extension in folders[folder]:
+        for folder in config.folders:
+            if extension in config.folders[folder]:
                 return folder
 
         if config.misc_enabled:
@@ -75,10 +75,10 @@ observer = Observer()
 observer.schedule(event_handler, config.sorting_dir, recursive=False)
 observer.start()
 
+print("Successfully initialised")
 try:
     while True:
         time.sleep(1)
 except KeyboardInterrupt:
     observer.stop()
 observer.join()
-
