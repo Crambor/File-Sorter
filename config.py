@@ -46,7 +46,7 @@ if not os.path.exists('config.txt'):
     with open('config.txt', 'w') as x:
         x.write(config_toml)
         Tk().withdraw()
-        messagebox.showinfo("Config Created", "Config file has been created.\nPlease input your sorting directory into the config and try again.")
+        messagebox.showinfo("Config Created", "Config file has been created.\nPlease input your sorting directory into the config and run the program again.")
         exit()
 
 try:
