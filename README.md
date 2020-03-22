@@ -24,6 +24,8 @@ Copy the files into a directory and run `FileSorter.py` or `FileSorter.exe`. If 
 
 `FileSorter.exe` will automatically run as a background process. If you wish to run the python version in the background, change the extension of the python file to `.pyw`.
 
+If you wish for any non-specified extensions to be sorted into a miscellaneous folder, change the config option `misc_enabled` to `true`.
+
 ### Changing folders and extensions
 
 The extensions and their corresponding folders to be sorted into can be changed inside the `config.txt` config file. To add a new folder to sort into, you just apply the following template inside `config.txt`:
