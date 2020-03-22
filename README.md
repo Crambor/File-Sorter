@@ -20,9 +20,11 @@ These prerequisites only apply if you are not using the standalone application.
   
 ### Using the program
 
-Copy the files into a directory and run `FileSorter.py` or `FileSorter.exe`. If you did not copy the config file above, it will be automatically created and you will be prompted to input a directory to sort, in the format `C:/Users/Username/Downloads`
+Copy the files into a directory and run `FileSorter.py` or `FileSorter.exe`. If you did not copy the config file above, it will be automatically created and you will be prompted to input a directory to sort, in the format 
 
-`FileSorter.exe` will automatically run as a background process. If you wish to run the python version in the background, change the extension of the python file to `.pyw`
+`C:/Users/Username/Downloads`
+
+`FileSorter.exe` will automatically run as a background process. If you wish to run the python version in the background, change the extension of the python file to `.pyw`.
 
 ### Changing folders and extensions
 
