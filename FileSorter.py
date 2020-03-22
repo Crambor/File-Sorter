@@ -51,7 +51,7 @@ class FileHandler(FileSystemEventHandler):
         files = sorted(filter(is_file, os.listdir(folder_dir)))
         files = files[-1:] + files[:-1]
 
-        if files[0:] != [f"{name}.{extension}"]:
+        if files[:1] != [f"{name}.{extension}"]:
             filename = f"{name}.{extension}"
         else:
             i=2
