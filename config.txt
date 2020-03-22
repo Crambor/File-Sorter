@@ -1,0 +1,32 @@
+# This is the directory to be sorted into the corresponding folders.
+# Input must be a directory e.g C:/Users/Username/Downloads (Please be aware that '' will not work for the directory)
+sorting_dir = ''
+
+# This will sort any non-ignored file types into a miscellaneous folder.
+# Input must be true/false
+misc_enabled = false
+
+# These file extensions will be ignored.
+ignore = [
+	'ini'
+]
+
+# These are the folders to be sorted into, based on the file extensions input.
+# To create a new folder, follow the format below.
+[folders]
+Images = [
+	'jpg',
+	'jpeg',
+	'png',
+	'gif',
+	'bmp'
+]
+
+Videos = [
+        'webm',
+        'mp4',
+        'avi',
+        'mov',
+        'mkv',
+        'm4v'
+]
