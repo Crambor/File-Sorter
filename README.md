@@ -1,6 +1,6 @@
 # File Sorter
 
-The purpose of this program is to automatically sort a given directory. 
+The purpose of this program is to automatically sort a given directory into user-assigned folders, by file extension.
 
 ## Getting Started
 
