@@ -2,6 +2,7 @@ import toml
 # pip install toml for this package to work
 
 import os
+from sys import exit
 from tkinter import Tk
 from tkinter import messagebox
 
