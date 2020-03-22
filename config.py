@@ -7,7 +7,7 @@ from tkinter import messagebox
 
 
 config_toml = """# This is the directory to be sorted into the corresponding folders.
-# Input must be a directory e.g C:/Users/Username/Downloads (Please be aware that '\' will not work for the directory)
+# Input must be a directory e.g C:/Users/Username/Downloads (Please be aware that '\\' will not work for the directory)
 sorting_dir = ''
 
 # This will sort any non-ignored file types into a miscellaneous folder.
