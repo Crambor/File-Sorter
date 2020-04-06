@@ -22,7 +22,7 @@ class FileHandler(FileSystemEventHandler):
                 folder_dir = f'{config.sorting_dir}\\' + self.get_folder(extension)
             except TypeError:
                 continue
-            
+
             if not os.path.isdir(folder_dir):
                 os.mkdir(folder_dir)
 
@@ -30,7 +30,6 @@ class FileHandler(FileSystemEventHandler):
                 self.move_file(name, extension, folder_dir)
             except PermissionError:
                 continue
-
 
     @staticmethod
     def get_folder(extension):
@@ -41,7 +40,6 @@ class FileHandler(FileSystemEventHandler):
         if config.misc_enabled:
             return 'Misc'
         return None
-
 
     @staticmethod
     def move_file(name, extension, folder_dir):
@@ -54,16 +52,15 @@ class FileHandler(FileSystemEventHandler):
         if files[:1] != [f"{name}.{extension}"]:
             filename = f"{name}.{extension}"
         else:
-            i=2
+            i = 2
             for file in files[1:]:
-                num = int(re.search('\s\(([0-9]+)\)\.', file).group(1))
+                num = int(re.search(r'\s\(([0-9]+)\)\.', file).group(1))
                 if i != num:
                     break
 
-                i+=1
+                i += 1
 
             filename = f"{name} ({i}).{extension}"
-
 
         src = f"{config.sorting_dir}\\{name}.{extension}"
         dst = f"{folder_dir}\\{filename}"
